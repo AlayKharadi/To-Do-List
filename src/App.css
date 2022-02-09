@@ -1,0 +1,63 @@
+.App {
+  display: grid;
+  gap: 0px;
+  grid-template-rows: 3.75rem 2.25rem auto;
+  background-color: #282c34;
+  color: white;
+  height: 100vh;
+}
+
+.App .App-title {
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: darkolivegreen;
+}
+
+.App .input-box{
+  display: grid;
+  gap: 0px;
+  grid-template-columns: auto 2.25rem;
+}
+
+.App .input-box .input{
+  outline: none;
+  font-size: 1rem;
+}
+
+.App .input-box button{
+  color: darkolivegreen;
+}
+
+.App .input-box button .bi-plus-circle-fill{
+  vertical-align:middle;
+}
+
+.App .list{
+  display: flex;
+  flex-direction: column;
+  margin: 0rem;
+  padding: 0.5rem;
+  overflow: auto;
+  list-style: none;
+  align-items: center;
+}
+
+.App .list li{
+  width: 35rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 0.2rem;
+  word-wrap: break-word;
+  background-color: darkolivegreen;
+}
+
+.App .list li .bi-trash-fill{
+  float: right;
+  cursor: pointer;
+}
+
+.App .list li .bi-trash-fill::after{
+  content: '';
+  clear: both;
+}
